@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <!-- css -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- axios cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"
+    integrity="sha512-PJa3oQSLWRB7wHZ7GQ/g+qyv6r4mbuhmiDb8BjSFZ8NZ2a42oTtAq5n0ucWAwcQDlikAtkub+tPVCw4np27WCg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- search section -->
+    <div class="search-box">
+      <i class="fa-solid fa-location-dot location-icon"></i>
+      <input type="text" name="search" class="search" placeholder="Enter Location Here" autocomplete="on">
+      <i class="fa-solid fa-magnifying-glass search-icon"></i>
+    </div>
+    <!-- weather box -->
+    <div class="weather-box">
+      <div class="box">
+        <div class="weather-info">
+          <div class="weather">
+            <img src="" alt="" class="img">
+            <div class="temp-div">
+              <p class="temparature"> 0 </p><span class="deg-cel"> &deg;C</span>
+            </div>
+            <p class="description">Enter Location</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- wind and humidity -->
+    <div class="wind">
+
+      <div class="wind-speed">
+        <i class="fa-solid fa-wind"></i>
+        <div class="wind-details">
+          <div class="wind-kmh"><span class="wind-kmh-nmbr">0</span> Km/h</div>
+          <div class="wind-text">Wind Speed</div>
+        </div>
+      </div>
+
+      <div class="water">
+        <i class="fa-solid fa-water"></i>
+        <div class="water-details">
+          <div class="water-percents"><span class="water-percents-nmbr">0</span>%</div>
+          <div class="water-text">Humidity</div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

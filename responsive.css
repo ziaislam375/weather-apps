@@ -1,0 +1,71 @@
+@media screen and (min-width: 300px) and (max-width: 350px) {
+  .container {
+    width: 280px;
+  }
+  .temparature {
+    font-size: 60px;
+  }
+  .wind .fa-wind {
+    font-size: 33px;
+  }
+
+  .wind-details .wind-text {
+    font-size: 13px;
+  }
+  .wind-details .wind-kmh {
+    font-size: 18px;
+  }
+  .wind-kmh-nmbr {
+    font-size: 21px;
+  }
+  .wind .fa-water {
+    font-size: 33px;
+  }
+  .wind-details .water-text {
+    font-size: 13px;
+  }
+  .water-percents {
+    font-size: 18px;
+  }
+  .water-percents-nmbr {
+    font-size: 21px;
+  }
+}
+@media screen and (min-width: 351px) and (max-width: 400px) {
+  .container {
+    width: 320px;
+  }
+  .temparature {
+    font-size: 62px;
+  }
+  .wind .fa-wind {
+    font-size: 34px;
+  }
+
+  .wind-details .wind-text {
+    font-size: 15px;
+  }
+  .wind-details .wind-kmh {
+    font-size: 20px;
+  }
+  .wind-kmh-nmbr {
+    font-size: 23px;
+  }
+  .wind .fa-water {
+    font-size: 34px;
+  }
+  .wind-details .water-text {
+    font-size: 15px;
+  }
+  .water-percents {
+    font-size: 20px;
+  }
+  .water-percents-nmbr {
+    font-size: 23px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .container {
+    width: 380px;
+  }
+}

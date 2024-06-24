@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@400;500;600&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Kanit;
+}
+body {
+  background-image: url(images/background.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  backdrop-filter: blur(2px);
+}
+.container {
+  position: relative;
+  background-color: #fffdfd2a;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  width: 350px;
+  backdrop-filter: blur(8px);
+  height: max-content;
+  border-radius: 15px;
+  padding: 15px;
+  transition: height 5s;
+}
+/* search section */
+.search-box {
+  position: relative;
+  width: 100%;
+  height: 55px;
+  background-color: transparent;
+  border: 0.1px solid rgba(224, 223, 223, 0.662);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.search-box .search {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 0 42px 0 35px;
+  font-size: 22px;
+  text-transform: capitalize;
+  text-overflow: ellipsis;
+  color: #ffffffde;
+}
+
+.search-box .search::placeholder {
+  font-size: 22px;
+  color: #ffffffde;
+  background-color: transparent;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 60000000s, color 60000000s;
+}
+.location-icon {
+  position: absolute;
+  font-size: 25px;
+  left: 8px;
+  color: #ffffffe0;
+}
+.search-icon {
+  position: absolute;
+  right: 2px;
+  font-size: 22px;
+  cursor: pointer;
+  color: #ffffffde;
+  padding: 8px;
+  border-radius: 50%;
+}
+.search-icon:hover {
+  background-color: #d3d2d25f;
+}
+.search-icon:active {
+  background-color: #d3d2d2;
+  box-shadow: 0 0 5px #b2b2b2;
+  padding: 8px;
+  border-radius: 50%;
+}
+/* temparature section */
+.weather-box {
+  position: relative;
+  text-align: center;
+}
+.weather-box img {
+  width: 60%;
+  margin-top: 15px;
+}
+.temp-div {
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+  flex-direction: row;
+}
+.temparature {
+  font-size: 65px;
+  color: #ffff;
+  font-weight: 500;
+
+  margin-top: 10px;
+}
+
+.temp-div span {
+  font-size: 30px;
+  margin-bottom: 18px;
+  color: #ffff;
+  font-weight: 500;
+}
+.weather-box .description {
+  color: white;
+  font-size: 25px;
+  font-weight: 450;
+}
+/* wind section */
+.wind {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin: 35px 5px 0 5px;
+}
+.wind .wind-speed {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.wind .fa-wind {
+  font-size: 37px;
+  margin-right: 11px;
+}
+.wind .wind-details {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.wind-details .wind-kmh,
+.wind-details .wind-text {
+  font-size: 15px;
+}
+.wind-details .wind-kmh {
+  font-size: 22px;
+}
+.wind-kmh-nmbr {
+  font-size: 24px;
+}
+
+.wind .water {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.wind .fa-water {
+  font-size: 37px;
+  margin-right: 11px;
+}
+.wind .water-details {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.wind-details .water-text {
+  font-size: 15px;
+}
+.water-percents {
+  font-size: 22px;
+}
+.water-percents-nmbr {
+  font-size: 24px;
+}
